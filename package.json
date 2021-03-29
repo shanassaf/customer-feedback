@@ -1,19 +1,13 @@
 {
-  "name": "ts-skeleton",
+  "name": "customer-feedback",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@types/enzyme": "^3.10.6",
-    "@types/enzyme-adapter-react-16": "^1.0.3",
-    "@types/enzyme-to-json": "^1.5.3",
     "@types/jest": "^26.0.13",
     "@types/node": "14.6.4",
     "@types/react": "^16.9.49",
     "@types/react-dom": "16.9.1",
     "@types/styled-components": "^5.1.3",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.4",
-    "enzyme-to-json": "^3.5.0",
     "jest-styled-components": "^7.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -44,11 +38,6 @@
       "last 1 safari version"
     ]
   },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
   "prettier": {
     "printWidth": 95,
     "tabWidth": 2,
@@ -59,5 +48,8 @@
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
     "fluid": false
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.2.5"
   }
 }
