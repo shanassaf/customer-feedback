@@ -2,11 +2,11 @@ import React from 'react';
 import { render } from 'react-dom';
 import './index.css';
 import App from './components/App/component';
+import StoreProvider from './state/StoreProvider';
 
 render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<StoreProvider>
+		<App />
+	</StoreProvider>,
+	document.getElementById('root')
 );
-
