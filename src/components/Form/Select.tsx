@@ -21,6 +21,7 @@ export const Select = ({ setComment, comment, value }: Props): JSX.Element => {
 				setComment({ ...comment, rating: ev.target.value });
 			}}
 		>
+			<StyledOption value="0">0</StyledOption>
 			<StyledOption value="1">1</StyledOption>
 			<StyledOption value="2">2</StyledOption>
 			<StyledOption value="3">3</StyledOption>

@@ -44,7 +44,7 @@ const StyledContainer = styled.div`
 const initialState = {
 	name: '',
 	email: '',
-	rating: '1',
+	rating: '0',
 	text: '',
 	uuid: '',
 } as Comment;
@@ -53,11 +53,11 @@ export const Form = (): JSX.Element => {
 	const { dispatch } = useContext(Context);
 	const [comment, setComment] = useState<Comment>(initialState);
 
-	function onSubmit(ev: React.FormEvent): void {
+	const onSubmit = (ev: React.FormEvent): void => {
 		ev.preventDefault();
 		dispatch({ type: 'ADD_COMMENT', comment: { ...comment, uuid: uuidGenerator() } });
 		setComment(initialState);
-	}
+	};
 
 	return (
 		<>

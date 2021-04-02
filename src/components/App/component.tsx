@@ -4,6 +4,7 @@ import { Form } from '../Form/Form';
 import { Header } from '../Header/Header';
 import { Footer } from '../Footer/Footer';
 import { Comments } from '../Comments/Comments';
+import Chart from '../Chart/Chart';
 
 const StyledLayout = styled.div`
 	display: grid;
@@ -29,10 +30,8 @@ const StyledForm = styled.div`
 	padding: 10px 20px;
 	max-width: 640px;
 `;
-const StyledGraph = styled.div`
+const StyledChart = styled.div`
 	grid-area: graph;
-	height: 100px;
-	background-color: yellow;
 `;
 const StyledComments = styled.div`
 	grid-area: comments;
@@ -59,7 +58,9 @@ const App = () => {
 			<StyledForm>
 				<Form />
 			</StyledForm>
-			<StyledGraph>Graph</StyledGraph>
+			<StyledChart>
+				<Chart />
+			</StyledChart>
 			<StyledComments>
 				<Comments />
 			</StyledComments>

@@ -22,21 +22,12 @@ describe('Reducer', () => {
 	} as Comment;
 
 	const newState = {
-		comments: [
-			{
-				name: 'Shannon',
-				email: 'shannon@shan.shan',
-				text: 'I am Shannon',
-				rating: '1',
-			},
-			{
-				name: 'Checkout',
-				email: 'checkout@check.out',
-				text: 'I am Checkout',
-				rating: '5',
-			},
-		],
+		...initialState,
+		initialState: {
+			comments: [{ comment }],
+		},
 	};
+
 	test('returns original state with unknown action type', () => {
 		const action = { type: 'UNKNOWN_TYPE', comment };
 		const result = Reducer(initialState, action);
