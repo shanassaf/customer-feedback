@@ -3,7 +3,18 @@ import styled from 'styled-components';
 import { Pie } from 'react-chartjs-2';
 import { Context } from '../../state/StoreProvider';
 
-const StyledChart = styled.div``;
+const StyledChart = styled.div`
+	margin: 50px auto 0;
+	width: 320px;
+
+	@media (min-width: 720px) {
+		width: 400px;
+	}
+
+	@media (min-width: 1024px) {
+		margin: auto;
+	}
+`;
 
 export const Chart = (): JSX.Element => {
 	const {

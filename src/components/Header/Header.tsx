@@ -8,6 +8,6 @@ const StyledHeader = styled.header`
 
 export const Header = (): JSX.Element => (
 	<StyledHeader>
-		<img height="20px" src={Checkout} alt="Checkout logo" />
+		<img height="30px" src={Checkout} alt="Checkout logo" />
 	</StyledHeader>
 );

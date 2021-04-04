@@ -7,7 +7,6 @@ interface Props {
 }
 const StyledTextArea = styled.textarea`
 	padding: 10px 4px;
-	max-width: 720px;
 	cursor: pointer;
 
 	:hover {

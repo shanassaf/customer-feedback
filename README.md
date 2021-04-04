@@ -1,3 +1,15 @@
+# Application Overview
+
+In this project is a customer feedback page for [www.checkout.com]Checkout.
+
+## Tech Stack
+
+Built with React.
+
+## Archcitecture 
+
+Hosted wth vercel - you can visit the webpage at [customer-feedback-xi.vercel.app]this url.
+
 ## Available Scripts
 
 In the project directory, you can run:

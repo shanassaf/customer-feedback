@@ -7,50 +7,40 @@ import { Feedback } from '../Feedback';
 import { Chart } from '../Chart';
 
 const StyledLayout = styled.div`
+	padding: 20px;
+`;
+const StyledContent = styled.div`
 	display: grid;
-	padding: 10px;
+	max-width: 1024px;
+	margin: auto;
 	grid-template-areas:
-		'head'
-		'form'
-		'graph'
-		'comments'
-		'foot ';
+		'feedback'
+		'chart';
 
-	@media (min-width: 720px) {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas:
-			'head head'
-			'form graph'
-			'comments comments'
-			'foot foot';
+	@media (min-width: 1024px) {
+		grid-template-areas: 'feedback chart';
+		grid-template-columns: 1fr auto;
 	}
 `;
 const StyledForm = styled.div`
-	grid-area: form;
+	grid-area: feedback;
 	padding: 10px 20px;
-	max-width: 640px;
 	border: 1px solid black;
 	border-radius: 4px;
 `;
-const StyledChart = styled.div`
-	grid-area: graph;
-	margin: auto;
-	width: 80%;
-	padding: 30px;
-`;
 const StyledFeedback = styled.div`
-	grid-area: comments;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	padding: 10px 20px;
+	max-width: 1024px;
+	margin: 0 auto;
+	margin-top: 50px;
 `;
 const StyledHeader = styled.div`
-	grid-area: head;
-	height: 50px;
 	margin-bottom: 20px;
+	text-align: center;
 `;
 const StyledFooter = styled.div`
-	grid-area: foot;
 	padding: 50px 20px;
 `;
 
@@ -60,12 +50,12 @@ export const App = () => {
 			<StyledHeader>
 				<Header />
 			</StyledHeader>
-			<StyledForm>
-				<Form />
-			</StyledForm>
-			<StyledChart>
+			<StyledContent>
+				<StyledForm>
+					<Form />
+				</StyledForm>
 				<Chart />
-			</StyledChart>
+			</StyledContent>
 			<StyledFeedback>
 				<Feedback />
 			</StyledFeedback>
