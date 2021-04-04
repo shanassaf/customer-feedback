@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Form } from '../Form/Form';
-import { Header } from '../Header/Header';
-import { Footer } from '../Footer/Footer';
-import { Comments } from '../Comments/Comments';
-import Chart from '../Chart/Chart';
+import { Form } from '../Form';
+import { Header } from '../Header';
+import { Footer } from '../Footer';
+import { Feedback } from '../Feedback';
+import { Chart } from '../Chart';
 
 const StyledLayout = styled.div`
 	display: grid;
@@ -13,7 +13,7 @@ const StyledLayout = styled.div`
 		'head'
 		'form'
 		'graph'
-		'comments '
+		'comments'
 		'foot ';
 
 	@media (min-width: 720px) {
@@ -29,11 +29,16 @@ const StyledForm = styled.div`
 	grid-area: form;
 	padding: 10px 20px;
 	max-width: 640px;
+	border: 1px solid black;
+	border-radius: 4px;
 `;
 const StyledChart = styled.div`
 	grid-area: graph;
+	margin: auto;
+	width: 80%;
+	padding: 30px;
 `;
-const StyledComments = styled.div`
+const StyledFeedback = styled.div`
 	grid-area: comments;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -42,14 +47,14 @@ const StyledComments = styled.div`
 const StyledHeader = styled.div`
 	grid-area: head;
 	height: 50px;
+	margin-bottom: 20px;
 `;
 const StyledFooter = styled.div`
 	grid-area: foot;
-	padding: 10px 20px;
-	height: 50px;
+	padding: 50px 20px;
 `;
 
-const App = () => {
+export const App = () => {
 	return (
 		<StyledLayout>
 			<StyledHeader>
@@ -61,14 +66,12 @@ const App = () => {
 			<StyledChart>
 				<Chart />
 			</StyledChart>
-			<StyledComments>
-				<Comments />
-			</StyledComments>
+			<StyledFeedback>
+				<Feedback />
+			</StyledFeedback>
 			<StyledFooter>
 				<Footer />
 			</StyledFooter>
 		</StyledLayout>
 	);
 };
-
-export default App;

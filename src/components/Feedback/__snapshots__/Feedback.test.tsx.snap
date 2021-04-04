@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feedback component renders correctly 1`] = `
+<DocumentFragment>
+  <ul
+    class="sc-dlnjPT fLNLzA"
+  >
+    <h2
+      class="sc-bdnylx dgWwPV"
+    >
+      Comments section
+    </h2>
+    <h2
+      class="sc-gtssRu cIzEkl"
+    >
+      See the feedback other users have left here!
+    </h2>
+    <li
+      class="sc-hKFyIo grWPEk"
+    >
+      <div
+        class="sc-eCApGN"
+      >
+        Name: name2
+      </div>
+      <div
+        class="sc-eCApGN"
+      >
+        Email: email2
+      </div>
+      <div
+        class="sc-eCApGN"
+      >
+        Rating: 2
+      </div>
+      <div
+        class="sc-eCApGN"
+      >
+        Comment: text2
+      </div>
+    </li>
+    <li
+      class="sc-hKFyIo grWPEk"
+    >
+      <div
+        class="sc-eCApGN"
+      >
+        Name: name1
+      </div>
+      <div
+        class="sc-eCApGN"
+      >
+        Email: email1
+      </div>
+      <div
+        class="sc-eCApGN"
+      >
+        Rating: 1
+      </div>
+      <div
+        class="sc-eCApGN"
+      >
+        Comment: text1
+      </div>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

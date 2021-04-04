@@ -4,6 +4,7 @@ import { v4 as uuidGenerator } from 'uuid';
 import { Context } from '../../state/StoreProvider';
 import { Input } from './Input';
 import { Select } from './Select';
+import { TextArea } from './TextArea';
 
 const StyledTitle = styled.h1`
 	font-size: 20px;
@@ -26,12 +27,11 @@ const StyledInputButton = styled.input`
 
 	:hover {
 		cursor: pointer;
+		border-color: #1b047c;
+		background: #c5dadd;
 	}
 `;
-const StyledTextArea = styled.textarea`
-	padding: 10px 4px;
-	max-width: 720px;
-`;
+
 const StyledLabel = styled.label`
 	padding: 20px 0 10px;
 `;
@@ -45,18 +45,18 @@ const initialState = {
 	name: '',
 	email: '',
 	rating: '0',
-	text: '',
+	comment: '',
 	uuid: '',
-} as Comment;
+} as Feedback;
 
 export const Form = (): JSX.Element => {
 	const { dispatch } = useContext(Context);
-	const [comment, setComment] = useState<Comment>(initialState);
+	const [feedback, setFeedback] = useState<Feedback>(initialState);
 
 	const onSubmit = (ev: React.FormEvent): void => {
 		ev.preventDefault();
-		dispatch({ type: 'ADD_COMMENT', comment: { ...comment, uuid: uuidGenerator() } });
-		setComment(initialState);
+		dispatch({ type: 'ADD_FEEDBACK', feedback: { ...feedback, uuid: uuidGenerator() } });
+		setFeedback(initialState);
 	};
 
 	return (
@@ -65,25 +65,20 @@ export const Form = (): JSX.Element => {
 			<StyledSubTitle>Please leave a review of our product here!</StyledSubTitle>
 			<StyledForm onSubmit={onSubmit}>
 				<StyledContainer>
-					<StyledLabel>Name *</StyledLabel>
-					<Input setComment={setComment} comment={comment} name="name" type="text" />
+					<StyledLabel htmlFor="name">Name *</StyledLabel>
+					<Input setFeedback={setFeedback} feedback={feedback} name="name" type="text" />
 				</StyledContainer>
 				<StyledContainer>
-					<StyledLabel>Email *</StyledLabel>
-					<Input setComment={setComment} comment={comment} name="email" type="email" />
+					<StyledLabel htmlFor="email">Email *</StyledLabel>
+					<Input setFeedback={setFeedback} feedback={feedback} name="email" type="email" />
 				</StyledContainer>
 				<StyledContainer>
-					<StyledLabel>Comment</StyledLabel>
-					<StyledTextArea
-						value={comment.text}
-						onChange={(ev) => {
-							setComment({ ...comment, text: ev.target.value });
-						}}
-					/>
+					<StyledLabel htmlFor="comment">Comment *</StyledLabel>
+					<TextArea setFeedback={setFeedback} feedback={feedback} />
 				</StyledContainer>
 				<StyledContainer>
-					<StyledLabel>Rating *</StyledLabel>
-					<Select setComment={setComment} comment={comment} value={comment.rating} />
+					<StyledLabel htmlFor="rating">Rating *</StyledLabel>
+					<Select setFeedback={setFeedback} feedback={feedback} />
 				</StyledContainer>
 				<StyledContainer>
 					<StyledInputButton type="submit" value="Submit" />

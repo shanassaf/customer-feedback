@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component renders correctly 1`] = `
+<DocumentFragment>
+  <select
+    class="sc-bdnylx kYqwRh"
+    name="rating"
+    required=""
+  >
+    <option
+      class="sc-gtssRu"
+      value="0"
+    >
+      0
+    </option>
+    <option
+      class="sc-gtssRu"
+      value="1"
+    >
+      1
+    </option>
+    <option
+      class="sc-gtssRu"
+      value="2"
+    >
+      2
+    </option>
+    <option
+      class="sc-gtssRu"
+      value="3"
+    >
+      3
+    </option>
+    <option
+      class="sc-gtssRu"
+      value="4"
+    >
+      4
+    </option>
+    <option
+      class="sc-gtssRu"
+      value="5"
+    >
+      5
+    </option>
+  </select>
+</DocumentFragment>
+`;

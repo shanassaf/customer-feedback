@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component renders correctly 1`] = `
+<DocumentFragment>
+  <h1
+    class="sc-eCApGN iEtHMq"
+  >
+    Customer Feedback Form
+  </h1>
+  <h2
+    class="sc-jSFkmK deQnhz"
+  >
+    Please leave a review of our product here!
+  </h2>
+  <form
+    class="sc-gKAblj hkzmtT"
+  >
+    <div
+      class="sc-pNWxx bWjldX"
+    >
+      <label
+        class="sc-fujyUd cwiAfG"
+        for="name"
+      >
+        Name *
+      </label>
+      <input
+        class="sc-bdnylx bzTEwn"
+        name="name"
+        required=""
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="sc-pNWxx bWjldX"
+    >
+      <label
+        class="sc-fujyUd cwiAfG"
+        for="email"
+      >
+        Email *
+      </label>
+      <input
+        class="sc-bdnylx bzTEwn"
+        name="email"
+        required=""
+        type="email"
+        value=""
+      />
+    </div>
+    <div
+      class="sc-pNWxx bWjldX"
+    >
+      <label
+        class="sc-fujyUd cwiAfG"
+        for="comment"
+      >
+        Comment *
+      </label>
+      <textarea
+        class="sc-hKFyIo drMVRo"
+        name="comment"
+        required=""
+      />
+    </div>
+    <div
+      class="sc-pNWxx bWjldX"
+    >
+      <label
+        class="sc-fujyUd cwiAfG"
+        for="rating"
+      >
+        Rating *
+      </label>
+      <select
+        class="sc-gtssRu dgBQYk"
+        name="rating"
+        required=""
+      >
+        <option
+          class="sc-dlnjPT"
+          value="0"
+        >
+          0
+        </option>
+        <option
+          class="sc-dlnjPT"
+          value="1"
+        >
+          1
+        </option>
+        <option
+          class="sc-dlnjPT"
+          value="2"
+        >
+          2
+        </option>
+        <option
+          class="sc-dlnjPT"
+          value="3"
+        >
+          3
+        </option>
+        <option
+          class="sc-dlnjPT"
+          value="4"
+        >
+          4
+        </option>
+        <option
+          class="sc-dlnjPT"
+          value="5"
+        >
+          5
+        </option>
+      </select>
+    </div>
+    <div
+      class="sc-pNWxx bWjldX"
+    >
+      <input
+        class="sc-iCoHVE clHQPA"
+        type="submit"
+        value="Submit"
+      />
+    </div>
+  </form>
+</DocumentFragment>
+`;

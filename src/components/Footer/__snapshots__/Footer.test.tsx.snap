@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders correctly 1`] = `
+<DocumentFragment>
+  <footer
+    class="sc-bdnylx gKXuW"
+  >
+    Check out the repository for this webpage on
+    <a
+      class="sc-gtssRu crFWQZ"
+      href="https://github.com/shanassaf/customer-feedback"
+    >
+       github
+    </a>
+  </footer>
+</DocumentFragment>
+`;

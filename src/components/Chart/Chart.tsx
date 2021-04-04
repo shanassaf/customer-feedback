@@ -3,19 +3,17 @@ import styled from 'styled-components';
 import { Pie } from 'react-chartjs-2';
 import { Context } from '../../state/StoreProvider';
 
-const StyledChart = styled.div`
-	height: 100px;
-	padding: auto 0;
-`;
+const StyledChart = styled.div``;
 
-const Chart = (): JSX.Element => {
+export const Chart = (): JSX.Element => {
 	const {
-		state: { comments },
+		state: { feedback },
 	} = useContext(Context);
+
 	const labelsArray = ['0', '1', '2', '3', '4', '5'];
 	let dataArray = [0, 0, 0, 0, 0, 0];
 
-	const ratingsArray = comments.map(({ rating }) => rating);
+	const ratingsArray = feedback.map(({ rating }) => rating);
 
 	ratingsArray.forEach((rating) => {
 		dataArray[rating]++;
@@ -26,7 +24,7 @@ const Chart = (): JSX.Element => {
 		datasets: [
 			{
 				label: 'Ratings',
-				backgroundColor: ['#B21F00', '#C9DE00', '#2FDE00', '#00A6B4', '#6800B4'],
+				backgroundColor: ['#FFAACC', '#CCFFCC', '#CCAAFF', '#FFFFCC', '#00FFFF', '#FFBC90'],
 				borderColor: 'rgba(0,0,0,1)',
 				borderWidth: 2,
 				data: dataArray,
@@ -37,15 +35,16 @@ const Chart = (): JSX.Element => {
 	const options = {
 		title: {
 			display: true,
-			text: 'Ratings',
+			text: 'See what others rated us!',
 			fontSize: 20,
 		},
 		legend: {
 			display: true,
+			position: 'top',
 		},
 	};
 
-	if (comments.length === 0) {
+	if (feedback.length === 0) {
 		return null;
 	}
 
@@ -55,5 +54,3 @@ const Chart = (): JSX.Element => {
 		</StyledChart>
 	);
 };
-
-export default Chart;

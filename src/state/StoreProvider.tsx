@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from 'react';
 import Reducer from './Reducer';
 
-const initialState: State = { comments: [] };
+const initialState: State = { feedback: [] };
 
 const StoreProvider = ({ children }) => {
 	const [state, dispatch] = useReducer(Reducer, initialState);

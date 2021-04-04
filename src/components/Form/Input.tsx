@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface Props {
-	setComment: (comment: Comment) => void;
-	comment: Comment;
+	setFeedback: (feedback: Feedback) => void;
+	feedback: Feedback;
 	name: string;
 	pattern?: string;
 	type: string;
@@ -11,22 +11,23 @@ interface Props {
 
 const StyledInput = styled.input`
 	padding: 10px 4px;
+	cursor: pointer;
 
 	:hover {
-		cursor: pointer;
+		border-color: #1b047c;
 	}
 `;
 
-export const Input = ({ setComment, comment, name, pattern, type }: Props): JSX.Element => {
+export const Input = ({ setFeedback, feedback, name, pattern, type }: Props): JSX.Element => {
 	return (
 		<StyledInput
 			type={type}
 			required
 			name={name}
-			value={comment[name]}
+			value={feedback[name]}
 			pattern={pattern}
 			onChange={(ev) => {
-				setComment({ ...comment, [ev.target.name]: ev.target.value });
+				setFeedback({ ...feedback, [ev.target.name]: ev.target.value });
 			}}
 		/>
 	);

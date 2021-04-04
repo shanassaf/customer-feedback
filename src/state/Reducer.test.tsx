@@ -1,41 +1,34 @@
-import React from 'react';
-import { render } from '@testing-library/react';
 import Reducer from './Reducer';
 
 describe('Reducer', () => {
 	const initialState = {
-		comments: [
+		feedback: [
 			{
 				name: 'Shannon',
 				email: 'shannon@shan.shan',
-				text: 'I am Shannon',
+				comment: 'I am Shannon',
 				rating: '1',
 			},
 		],
 	} as State;
 
-	const comment = {
+	const feedback = {
 		name: 'Checkout',
 		email: 'checkout@check.out',
-		text: 'I am Checkout',
+		comment: 'I am Checkout',
 		rating: '5',
-	} as Comment;
+	} as Feedback;
 
-	const newState = {
-		...initialState,
-		initialState: {
-			comments: [{ comment }],
-		},
-	};
+	const newState = { feedback: [...initialState.feedback, feedback] };
 
 	test('returns original state with unknown action type', () => {
-		const action = { type: 'UNKNOWN_TYPE', comment };
+		const action = { type: 'UNKNOWN_TYPE', feedback };
 		const result = Reducer(initialState, action);
 		expect(result).toEqual(initialState);
 	});
 
-	test('returns new state with ADD_COMMENT action type', () => {
-		const action = { type: 'ADD_COMMENT', comment };
+	test('returns new state with ADD_FEEDBACK action type', () => {
+		const action = { type: 'ADD_FEEDBACK', feedback };
 		const result = Reducer(initialState, action);
 		expect(result).toEqual(newState);
 	});

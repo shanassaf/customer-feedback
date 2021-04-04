@@ -1,18 +1,18 @@
 interface State {
-	comments: Comment[];
+	feedback: Feedback[];
 }
 
-interface Comment {
+interface Feedback {
 	name: string;
 	email: string;
-  text: string
+  comment: string
 	rating: string;
   uuid: string;
 }
 
 interface Action {
   type: string;
-  comment: Comment;
+  feedback: Feedback;
 }
 
 interface ContextType {

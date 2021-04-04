@@ -7,6 +7,11 @@ const StyledFooter = styled.footer`
 `;
 const StyledLink = styled.a`
 	text-decoration: none;
+	color: #800080;
+
+	:hover {
+		text-decoration: underline;
+	}
 `;
 
 export const Footer = (): JSX.Element => (

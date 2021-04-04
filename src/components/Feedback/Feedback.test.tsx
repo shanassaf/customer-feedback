@@ -1,29 +1,32 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { App } from './App';
+import { Feedback } from './Feedback';
 import { Context } from '../../state/StoreProvider';
 
-jest.mock('react-chartjs-2', () => ({
-	Pie: () => <div>Pie Chart</div>,
-}));
-
-describe('App', () => {
+describe('Feedback', () => {
 	const dispatch = jest.fn();
 	const state = {
 		feedback: [
 			{
-				name: 'name',
-				email: 'email',
-				comment: 'text',
+				name: 'name1',
+				email: 'email1',
+				comment: 'text1',
 				rating: '1',
-				uuid: 'uuid',
+				uuid: 'uuid1',
+			},
+			{
+				name: 'name2',
+				email: 'email2',
+				comment: 'text2',
+				rating: '2',
+				uuid: 'uuid2',
 			},
 		],
 	} as State;
 	test('component renders correctly', () => {
 		const { asFragment } = render(
 			<Context.Provider value={{ dispatch, state }}>
-				<App />
+				<Feedback />
 			</Context.Provider>
 		);
 		expect(asFragment()).toMatchSnapshot();

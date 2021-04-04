@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly 1`] = `
+<DocumentFragment>
+  <header
+    class="sc-bdnylx cdDTBJ"
+  >
+    <img
+      alt="Checkout logo"
+      height="20px"
+      src="checkout.svg"
+    />
+  </header>
+</DocumentFragment>
+`;

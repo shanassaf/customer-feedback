@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chart component does not render if no feedback has been provided 1`] = `<DocumentFragment />`;
+
+exports[`Chart component renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdnylx hRRney"
+  >
+    <div>
+      Pie Chart
+    </div>
+  </div>
+</DocumentFragment>
+`;

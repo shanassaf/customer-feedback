@@ -2,23 +2,29 @@ import React from 'react';
 import styled from 'styled-components';
 
 interface Props {
-	setComment: (comment: Comment) => void;
-	comment: Comment;
-	value: string;
+	setFeedback: (feedback: Feedback) => void;
+	feedback: Feedback;
 }
 
 const StyledSelect = styled.select`
 	padding: 10px;
 	width: 50px;
+	cursor: pointer;
+
+	:hover {
+		border-color: #1b047c;
+	}
 `;
 const StyledOption = styled.option``;
 
-export const Select = ({ setComment, comment, value }: Props): JSX.Element => {
+export const Select = ({ setFeedback, feedback }: Props): JSX.Element => {
 	return (
 		<StyledSelect
-			value={value}
+			required
+			name="rating"
+			value={feedback.rating}
 			onChange={(ev) => {
-				setComment({ ...comment, rating: ev.target.value });
+				setFeedback({ ...feedback, rating: ev.target.value });
 			}}
 		>
 			<StyledOption value="0">0</StyledOption>

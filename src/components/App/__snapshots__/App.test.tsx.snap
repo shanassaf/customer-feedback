@@ -2,8 +2,218 @@
 
 exports[`App component renders correctly 1`] = `
 <DocumentFragment>
-  <div>
-    hello world
+  <div
+    class="sc-fFSRdu hARJKV"
+  >
+    <div
+      class="sc-hHEjAm bshMBs"
+    >
+      <header
+        class="sc-jrsJCI cKuqIz"
+      >
+        <img
+          alt="Checkout logo"
+          height="20px"
+          src="checkout.svg"
+        />
+      </header>
+    </div>
+    <div
+      class="sc-bkbjAj gWfBiU"
+    >
+      <h1
+        class="sc-eCApGN iEtHMq"
+      >
+        Customer Feedback Form
+      </h1>
+      <h2
+        class="sc-jSFkmK deQnhz"
+      >
+        Please leave a review of our product here!
+      </h2>
+      <form
+        class="sc-gKAblj hkzmtT"
+      >
+        <div
+          class="sc-pNWxx bWjldX"
+        >
+          <label
+            class="sc-fujyUd cwiAfG"
+            for="name"
+          >
+            Name *
+          </label>
+          <input
+            class="sc-bdnylx bzTEwn"
+            name="name"
+            required=""
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="sc-pNWxx bWjldX"
+        >
+          <label
+            class="sc-fujyUd cwiAfG"
+            for="email"
+          >
+            Email *
+          </label>
+          <input
+            class="sc-bdnylx bzTEwn"
+            name="email"
+            required=""
+            type="email"
+            value=""
+          />
+        </div>
+        <div
+          class="sc-pNWxx bWjldX"
+        >
+          <label
+            class="sc-fujyUd cwiAfG"
+            for="comment"
+          >
+            Comment *
+          </label>
+          <textarea
+            class="sc-hKFyIo drMVRo"
+            name="comment"
+            required=""
+          />
+        </div>
+        <div
+          class="sc-pNWxx bWjldX"
+        >
+          <label
+            class="sc-fujyUd cwiAfG"
+            for="rating"
+          >
+            Rating *
+          </label>
+          <select
+            class="sc-gtssRu dgBQYk"
+            name="rating"
+            required=""
+          >
+            <option
+              class="sc-dlnjPT"
+              value="0"
+            >
+              0
+            </option>
+            <option
+              class="sc-dlnjPT"
+              value="1"
+            >
+              1
+            </option>
+            <option
+              class="sc-dlnjPT"
+              value="2"
+            >
+              2
+            </option>
+            <option
+              class="sc-dlnjPT"
+              value="3"
+            >
+              3
+            </option>
+            <option
+              class="sc-dlnjPT"
+              value="4"
+            >
+              4
+            </option>
+            <option
+              class="sc-dlnjPT"
+              value="5"
+            >
+              5
+            </option>
+          </select>
+        </div>
+        <div
+          class="sc-pNWxx bWjldX"
+        >
+          <input
+            class="sc-iCoHVE clHQPA"
+            type="submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </div>
+    <div
+      class="sc-iemXMA dWcWZq"
+    >
+      <div
+        class="sc-fnVYJo CvBch"
+      >
+        <div>
+          Pie Chart
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-dIvqjp iWFXBL"
+    >
+      <ul
+        class="sc-bqGHjH gSeTRC"
+      >
+        <h2
+          class="sc-crzoUp bNraUV"
+        >
+          Comments section
+        </h2>
+        <h2
+          class="sc-dIsAE ciFvTP"
+        >
+          See the feedback other users have left here!
+        </h2>
+        <li
+          class="sc-ksluoS hvBuRz"
+        >
+          <div
+            class="sc-hBMVcZ"
+          >
+            Name: name
+          </div>
+          <div
+            class="sc-hBMVcZ"
+          >
+            Email: email
+          </div>
+          <div
+            class="sc-hBMVcZ"
+          >
+            Rating: 1
+          </div>
+          <div
+            class="sc-hBMVcZ"
+          >
+            Comment: text
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="sc-dlMBXb ejZGQ"
+    >
+      <footer
+        class="sc-kEqYlL jpYKBx"
+      >
+        Check out the repository for this webpage on
+        <a
+          class="sc-iqAbSa jjiDNQ"
+          href="https://github.com/shanassaf/customer-feedback"
+        >
+           github
+        </a>
+      </footer>
+    </div>
   </div>
 </DocumentFragment>
 `;
