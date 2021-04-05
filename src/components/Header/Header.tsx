@@ -4,6 +4,8 @@ import Checkout from '../../images/checkout.svg';
 
 const StyledHeader = styled.header`
 	padding: 15px;
+	margin-bottom: 20px;
+	text-align: center;
 `;
 
 export const Header = (): JSX.Element => (

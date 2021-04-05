@@ -19,7 +19,7 @@ describe('Reducer', () => {
 		rating: '5',
 	} as Feedback;
 
-	const newState = { feedback: [...initialState.feedback, feedback] };
+	const newState = { feedback: [feedback, ...initialState.feedback] };
 
 	test('returns original state with unknown action type', () => {
 		const action = { type: 'UNKNOWN_TYPE', feedback };

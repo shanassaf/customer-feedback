@@ -5,7 +5,7 @@ exports[`Chart component does not render if no feedback has been provided 1`] = 
 exports[`Chart component renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx hRRney"
+    class="sc-bdnylx wtMGW"
   >
     <div>
       Pie Chart

@@ -10,7 +10,6 @@ const StyledChart = styled.div`
 	@media (min-width: 720px) {
 		width: 400px;
 	}
-
 	@media (min-width: 1024px) {
 		margin: auto;
 	}

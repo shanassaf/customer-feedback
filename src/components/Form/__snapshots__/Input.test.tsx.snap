@@ -3,7 +3,7 @@
 exports[`Input component renders correctly 1`] = `
 <DocumentFragment>
   <input
-    class="sc-bdnylx bzTEwn"
+    class="sc-bdnylx kTAmRM"
     name="name"
     required=""
     type="text"

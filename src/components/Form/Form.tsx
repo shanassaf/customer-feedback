@@ -6,6 +6,11 @@ import { Input } from './Input';
 import { Select } from './Select';
 import { TextArea } from './TextArea';
 
+const StyledFeedbackForm = styled.div`
+	padding: 10px 20px;
+	border: 1px solid black;
+	border-radius: 4px;
+`;
 const StyledTitle = styled.h1`
 	font-size: 20px;
 `;
@@ -31,7 +36,6 @@ const StyledInputButton = styled.input`
 		background: #c5dadd;
 	}
 `;
-
 const StyledLabel = styled.label`
 	padding: 20px 0 10px;
 `;
@@ -60,7 +64,7 @@ export const Form = (): JSX.Element => {
 	};
 
 	return (
-		<>
+		<StyledFeedbackForm>
 			<StyledTitle>Customer Feedback Form</StyledTitle>
 			<StyledSubTitle>Please leave a review of our product here!</StyledSubTitle>
 			<StyledForm onSubmit={onSubmit}>
@@ -84,6 +88,6 @@ export const Form = (): JSX.Element => {
 					<StyledInputButton type="submit" value="Submit" />
 				</StyledContainer>
 			</StyledForm>
-		</>
+		</StyledFeedbackForm>
 	);
 };

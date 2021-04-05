@@ -5,7 +5,6 @@ interface Props {
 	setFeedback: (feedback: Feedback) => void;
 	feedback: Feedback;
 	name: string;
-	pattern?: string;
 	type: string;
 }
 
@@ -18,14 +17,13 @@ const StyledInput = styled.input`
 	}
 `;
 
-export const Input = ({ setFeedback, feedback, name, pattern, type }: Props): JSX.Element => {
+export const Input = ({ setFeedback, feedback, name, type }: Props): JSX.Element => {
 	return (
 		<StyledInput
 			type={type}
 			required
 			name={name}
 			value={feedback[name]}
-			pattern={pattern}
 			onChange={(ev) => {
 				setFeedback({ ...feedback, [ev.target.name]: ev.target.value });
 			}}

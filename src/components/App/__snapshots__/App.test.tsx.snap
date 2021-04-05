@@ -3,217 +3,200 @@
 exports[`App component renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-fFSRdu hARJKV"
+    class="sc-bkbjAj ejHFsU"
   >
-    <div
-      class="sc-hHEjAm bshMBs"
+    <header
+      class="sc-kEqYlL geCFVq"
     >
-      <header
-        class="sc-jrsJCI cKuqIz"
-      >
-        <img
-          alt="Checkout logo"
-          height="20px"
-          src="checkout.svg"
-        />
-      </header>
-    </div>
+      <img
+        alt="Checkout logo"
+        height="30px"
+        src="checkout.svg"
+      />
+    </header>
     <div
-      class="sc-bkbjAj gWfBiU"
-    >
-      <h1
-        class="sc-eCApGN iEtHMq"
-      >
-        Customer Feedback Form
-      </h1>
-      <h2
-        class="sc-jSFkmK deQnhz"
-      >
-        Please leave a review of our product here!
-      </h2>
-      <form
-        class="sc-gKAblj hkzmtT"
-      >
-        <div
-          class="sc-pNWxx bWjldX"
-        >
-          <label
-            class="sc-fujyUd cwiAfG"
-            for="name"
-          >
-            Name *
-          </label>
-          <input
-            class="sc-bdnylx bzTEwn"
-            name="name"
-            required=""
-            type="text"
-            value=""
-          />
-        </div>
-        <div
-          class="sc-pNWxx bWjldX"
-        >
-          <label
-            class="sc-fujyUd cwiAfG"
-            for="email"
-          >
-            Email *
-          </label>
-          <input
-            class="sc-bdnylx bzTEwn"
-            name="email"
-            required=""
-            type="email"
-            value=""
-          />
-        </div>
-        <div
-          class="sc-pNWxx bWjldX"
-        >
-          <label
-            class="sc-fujyUd cwiAfG"
-            for="comment"
-          >
-            Comment *
-          </label>
-          <textarea
-            class="sc-hKFyIo drMVRo"
-            name="comment"
-            required=""
-          />
-        </div>
-        <div
-          class="sc-pNWxx bWjldX"
-        >
-          <label
-            class="sc-fujyUd cwiAfG"
-            for="rating"
-          >
-            Rating *
-          </label>
-          <select
-            class="sc-gtssRu dgBQYk"
-            name="rating"
-            required=""
-          >
-            <option
-              class="sc-dlnjPT"
-              value="0"
-            >
-              0
-            </option>
-            <option
-              class="sc-dlnjPT"
-              value="1"
-            >
-              1
-            </option>
-            <option
-              class="sc-dlnjPT"
-              value="2"
-            >
-              2
-            </option>
-            <option
-              class="sc-dlnjPT"
-              value="3"
-            >
-              3
-            </option>
-            <option
-              class="sc-dlnjPT"
-              value="4"
-            >
-              4
-            </option>
-            <option
-              class="sc-dlnjPT"
-              value="5"
-            >
-              5
-            </option>
-          </select>
-        </div>
-        <div
-          class="sc-pNWxx bWjldX"
-        >
-          <input
-            class="sc-iCoHVE clHQPA"
-            type="submit"
-            value="Submit"
-          />
-        </div>
-      </form>
-    </div>
-    <div
-      class="sc-iemXMA dWcWZq"
+      class="sc-iemXMA fTzAjS"
     >
       <div
-        class="sc-fnVYJo CvBch"
+        class="sc-eCApGN bJDjZL"
+      >
+        <h1
+          class="sc-jSFkmK eVjorG"
+        >
+          Customer Feedback Form
+        </h1>
+        <h2
+          class="sc-gKAblj erwryE"
+        >
+          Please leave a review of our product here!
+        </h2>
+        <form
+          class="sc-iCoHVE gvNWlc"
+        >
+          <div
+            class="sc-jrsJCI fmufhJ"
+          >
+            <label
+              class="sc-pNWxx bA-DjGm"
+              for="name"
+            >
+              Name *
+            </label>
+            <input
+              class="sc-bdnylx kTAmRM"
+              name="name"
+              required=""
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="sc-jrsJCI fmufhJ"
+          >
+            <label
+              class="sc-pNWxx bA-DjGm"
+              for="email"
+            >
+              Email *
+            </label>
+            <input
+              class="sc-bdnylx kTAmRM"
+              name="email"
+              required=""
+              type="email"
+              value=""
+            />
+          </div>
+          <div
+            class="sc-jrsJCI fmufhJ"
+          >
+            <label
+              class="sc-pNWxx bA-DjGm"
+              for="comment"
+            >
+              Comment *
+            </label>
+            <textarea
+              class="sc-hKFyIo iMDsTz"
+              name="comment"
+              required=""
+            />
+          </div>
+          <div
+            class="sc-jrsJCI fmufhJ"
+          >
+            <label
+              class="sc-pNWxx bA-DjGm"
+              for="rating"
+            >
+              Rating *
+            </label>
+            <select
+              class="sc-gtssRu faLnko"
+              name="rating"
+              required=""
+            >
+              <option
+                class="sc-dlnjPT"
+                value="0"
+              >
+                0
+              </option>
+              <option
+                class="sc-dlnjPT"
+                value="1"
+              >
+                1
+              </option>
+              <option
+                class="sc-dlnjPT"
+                value="2"
+              >
+                2
+              </option>
+              <option
+                class="sc-dlnjPT"
+                value="3"
+              >
+                3
+              </option>
+              <option
+                class="sc-dlnjPT"
+                value="4"
+              >
+                4
+              </option>
+              <option
+                class="sc-dlnjPT"
+                value="5"
+              >
+                5
+              </option>
+            </select>
+          </div>
+          <div
+            class="sc-jrsJCI fmufhJ"
+          >
+            <input
+              class="sc-fujyUd ibqMkB"
+              type="submit"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </div>
+      <div
+        class="sc-fFSRdu gwqGbX"
       >
         <div>
           Pie Chart
         </div>
       </div>
     </div>
-    <div
-      class="sc-dIvqjp iWFXBL"
+    <ul
+      class="sc-ksluoS epEKjM"
     >
-      <ul
-        class="sc-bqGHjH gSeTRC"
+      <h2
+        class="sc-dIsAE dYYxdW"
       >
-        <h2
-          class="sc-crzoUp bNraUV"
+        Comments section
+      </h2>
+      <h2
+        class="sc-bqGHjH coxgKP"
+      >
+        See the feedback that users have left here!
+      </h2>
+      <li
+        class="sc-hBMVcZ gbGNpa"
+      >
+        <div
+          class="sc-fnVYJo"
         >
-          Comments section
-        </h2>
-        <h2
-          class="sc-dIsAE ciFvTP"
+          Name: name
+        </div>
+        <div
+          class="sc-fnVYJo"
         >
-          See the feedback other users have left here!
-        </h2>
-        <li
-          class="sc-ksluoS hvBuRz"
+          Rating: 1
+        </div>
+        <div
+          class="sc-fnVYJo"
         >
-          <div
-            class="sc-hBMVcZ"
-          >
-            Name: name
-          </div>
-          <div
-            class="sc-hBMVcZ"
-          >
-            Email: email
-          </div>
-          <div
-            class="sc-hBMVcZ"
-          >
-            Rating: 1
-          </div>
-          <div
-            class="sc-hBMVcZ"
-          >
-            Comment: text
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="sc-dlMBXb ejZGQ"
+          Comment: text
+        </div>
+      </li>
+    </ul>
+    <footer
+      class="sc-iqAbSa kSTKJm"
     >
-      <footer
-        class="sc-kEqYlL jpYKBx"
+      Check out the repository for this webpage on
+      <a
+        class="sc-crzoUp eSUbZr"
+        href="https://github.com/shanassaf/customer-feedback"
       >
-        Check out the repository for this webpage on
-        <a
-          class="sc-iqAbSa jjiDNQ"
-          href="https://github.com/shanassaf/customer-feedback"
-        >
-           github
-        </a>
-      </footer>
-    </div>
+         github
+      </a>
+    </footer>
   </div>
 </DocumentFragment>
 `;

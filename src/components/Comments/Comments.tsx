@@ -8,8 +8,13 @@ const StyledTitle = styled.h2`
 const StyledSubTitle = styled.h2`
 	font-size: 12px;
 `;
-const StyledFeedback = styled.ul`
-	padding: 0;
+const StyledComments = styled.ul`
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 10px 20px;
+	max-width: 1024px;
+	margin: 0 auto;
+	margin-top: 50px;
 `;
 const StyledComment = styled.li`
 	list-style: none;
@@ -22,16 +27,16 @@ const StyledComment = styled.li`
 `;
 const StyledItem = styled.div``;
 
-export const Feedback = (): JSX.Element => {
+export const Comments = (): JSX.Element => {
 	const {
 		state: { feedback },
 	} = useContext(Context);
 
 	return (
-		<StyledFeedback>
+		<StyledComments>
 			<StyledTitle>Comments section</StyledTitle>
 			<StyledSubTitle>See the feedback that users have left here!</StyledSubTitle>
-			{feedback.reverse().map((feedback) => {
+			{feedback.map((feedback) => {
 				const { name, comment, rating, uuid } = feedback;
 				return (
 					<StyledComment key={uuid}>
@@ -41,6 +46,6 @@ export const Feedback = (): JSX.Element => {
 					</StyledComment>
 				);
 			})}
-		</StyledFeedback>
+		</StyledComments>
 	);
 };

@@ -3,11 +3,11 @@
 exports[`Footer component renders correctly 1`] = `
 <DocumentFragment>
   <footer
-    class="sc-bdnylx gKXuW"
+    class="sc-bdnylx eKwBmK"
   >
     Check out the repository for this webpage on
     <a
-      class="sc-gtssRu crFWQZ"
+      class="sc-gtssRu jDusuy"
       href="https://github.com/shanassaf/customer-feedback"
     >
        github

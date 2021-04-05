@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Feedback } from './Feedback';
+import { Comments } from './Comments';
 import { Context } from '../../state/StoreProvider';
 
-describe('Feedback', () => {
+describe('Comments', () => {
 	const dispatch = jest.fn();
 	const state = {
 		feedback: [
@@ -26,7 +26,7 @@ describe('Feedback', () => {
 	test('component renders correctly', () => {
 		const { asFragment } = render(
 			<Context.Provider value={{ dispatch, state }}>
-				<Feedback />
+				<Comments />
 			</Context.Provider>
 		);
 		expect(asFragment()).toMatchSnapshot();

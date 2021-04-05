@@ -3,7 +3,7 @@ const Reducer = (state: State, action: Action): State => {
 		case 'ADD_FEEDBACK':
 			return {
 				...state,
-				feedback: [...state.feedback, action.feedback],
+				feedback: [action.feedback, ...state.feedback],
 			};
 		default:
 			return state;

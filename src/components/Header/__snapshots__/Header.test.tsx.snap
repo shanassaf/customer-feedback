@@ -3,11 +3,11 @@
 exports[`Header component renders correctly 1`] = `
 <DocumentFragment>
   <header
-    class="sc-bdnylx cdDTBJ"
+    class="sc-bdnylx kmVjcx"
   >
     <img
       alt="Checkout logo"
-      height="20px"
+      height="30px"
       src="checkout.svg"
     />
   </header>
